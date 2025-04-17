@@ -13,6 +13,8 @@ import { AnimationOptions } from 'ngx-lottie';
 })
 export class AppComponent {
 
+  title: string = "";
+
   constructor(private http: HttpClient) { }
 
   numeroSorteado: number = 0;
@@ -36,11 +38,12 @@ export class AppComponent {
     });
 
     // Fazendo a requisição com os headers de autenticação
-    this.http.get<{ numeroSorte: number }>('http://localhost:8080/pascoa-sorte', { headers })
+    this.http.get<{ numeroSorte: number, usuario: string }>('http://localhost:8080/pascoa-sorte', { headers })
       .subscribe({
         next: response => {
           // Aqui estamos pegando apenas o valor de numeroSorte
           this.numeroSorteado = response.numeroSorte;
+          this.title = response.usuario;
         },
         error: err => console.error('Erro ao buscar número:', err)
       });

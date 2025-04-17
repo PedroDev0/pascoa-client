@@ -96,3 +96,17 @@
   .botao:hover {
     background-color: #3367d6;
   }
+
+  .titulo-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .titulo{
+     font-size: 5rem;
+    font-weight: bold;
+    color: #FFF1D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
