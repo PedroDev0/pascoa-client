@@ -39,6 +39,3 @@ Thumbs.db
 *.tgz
 *.gz
 *.zip
-
-# ✅ Optional: ignore local Angular configs
-angular.json

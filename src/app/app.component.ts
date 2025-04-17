@@ -1,12 +1,21 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { LottieComponent } from 'ngx-lottie';
+import { AnimationOptions } from 'ngx-lottie';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [LottieComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'pascoa-client';
+
+  topOptions: AnimationOptions = {
+    path: 'coelho_4_3s.json' // coloque o arquivo Lottie aqui
+  };
+
+  bottomOptions: AnimationOptions = {
+    path: 'coelho_4_3s.json' // ou outro caminho/arquivo se quiser variar
+  };
 }

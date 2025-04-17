@@ -1,0 +1,44 @@
+.coelho-animation {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .top-coelho {
+    top: 0;
+    animation: moverCoelhoEsquerda 6s linear infinite;
+    transform: scaleX(-1); // Inverte horizontalmente
+  }
+  
+  
+  .bottom-coelho {
+    bottom: 0;
+    animation: moverCoelhoDireita 6s linear infinite;
+  }
+  
+  @keyframes moverCoelhoDireita {
+    0% {
+      left: -220px;
+    }
+    100% {
+      left: 100vw;
+    }
+  }
+  
+  @keyframes moverCoelhoEsquerda {
+    0% {
+      right: -220px;
+    }
+    100% {
+      right: 100vw;
+    }
+  }
+  
+  .bg-coelho {
+    background-image: url('/ovos-azul.jpg'); /* ou o caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+  }
