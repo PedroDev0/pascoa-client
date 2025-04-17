@@ -35,10 +35,64 @@
   }
   
   .bg-coelho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url('/ovos-azul.jpg'); /* ou o caminho da sua imagem */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+  }
+  
+  .content {
+    padding: 1rem;
+    background-color: #BDDDE4;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 30vw;
+    height: 40vh;
+  }
+  .imagem {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .botao {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #9FB3DF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    bottom: 10px;
+  }
+
+  .imagem-numero {
+    display: flex;
+    align-items: center;
+    gap: 7vw;
+    height:85%; /* para ocupar a altura disponível */
+  }
+
+  .numero {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #FFF1D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .botao-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  .botao:hover {
+    background-color: #3367d6;
   }
