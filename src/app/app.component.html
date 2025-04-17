@@ -6,10 +6,10 @@
   <div class="content">
     <div class="imagem-numero">
       <img src="pedro.jpeg" alt="Imagem" class="imagem" />
-      <div class="numero">00</div>
+      <div class="numero">{{numeroSorteado}}</div>
     </div>
     <div class="botao-container">
-      <button class="botao">Exibir número sorteado</button>
+      <button class="botao"  (click)="sortearNumero()" >Exibir número sorteado</button>
     </div>
   </div>
 
